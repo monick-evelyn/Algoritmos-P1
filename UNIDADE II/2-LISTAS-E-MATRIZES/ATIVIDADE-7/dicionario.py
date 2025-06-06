@@ -6,15 +6,16 @@
         else:
             dicionario[letra] = 1 #b = 1
     return dicionario'''
-palavra = "banana"
 #$print(contar_letras("banana"))
 
+palavra = "banana"
 dicionario = {}
+#chave = letra; valor = quant. de ocorrências da letra
 for letra in palavra: #b 
     if letra in dicionario:
         dicionario[letra] += 1
-        print(f"{letra} {dicionario[letra]}")
+        #print(f" {letra} {dicionario[letra]} {dicionario}")
     else:
         dicionario[letra] = 1 #b = 1
-        print(f"{letra} {dicionario[letra]}")
-print(dicionario)
+        #print(f" {letra} {dicionario[letra]} {dicionario}")
+print(dicionario) #{'b': 1, 'a': 3, 'n': 2}

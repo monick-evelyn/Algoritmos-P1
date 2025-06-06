@@ -69,7 +69,8 @@ lista_de_contatos = []
 dicionario_de_contatos = {}
 opcao = 6
 while (opcao != 0):
-    opcao = int(input((f'''{"=~"*5} Gerenciador de Contatos {"=~"*5}
+    opcao = int(input((f'''
+{"=~"*5} Gerenciador de Contatos {"=~"*5}
 1 - Adicionar contato.
 2 - Listar contatos.
 3 - Atualizar contato.
@@ -87,7 +88,7 @@ Digite aqui: ''')))
 
     elif (opcao == 2):
         print(listar_contatos())
-        print(dicionario_de_contatos.items())
+        #print(dicionario_de_contatos.items())
 
     elif (opcao == 3):
         nome = input("Digite o nome do contato a ser atualizado: ")
@@ -110,6 +111,6 @@ Digite aqui: ''')))
 
     elif (opcao == 0):
         print(sair())
-        
+
     else:
         print("Opção inválida.")
